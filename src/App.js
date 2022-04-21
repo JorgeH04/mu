@@ -9,11 +9,13 @@ import Songs from './pages/Songs';
 import { Link } from "react-router-dom";
 import Player from "./components/AudioPlayer";
 import Navbar from "./components/Navbar";
+import NavbarTrack from "./components/NavbarTrack";
+
 import Hero from "./components/Hero";
 import Cards from "./components/Cards";
 import Footer from "./components/Footer";
 import Tracks from "./components/Tracks";
-
+ 
 
 import { Layout } from "antd";
 import Spotify from "./images/Spotify.png";
@@ -29,17 +31,29 @@ const App = () => {
   const [nftAlbum, setNftAlbum] = useState();
   return (
     <>
-      <Navbar/>
-      <Hero/>
-      <Cards/>
  
-      <Tracks/>
-      <Footer/>
-     
-      <Routes>
-               <Route path="/album" element={<Album setNftAlbum={setNftAlbum}/>} />
-     </Routes>
 
+      <Routes>
+           <Route path="/" element={(
+                <>
+               <Navbar/>
+               <Hero/>
+               <Cards/>
+               <Tracks/>
+               <Footer/>
+               </>
+               )} />
+      </Routes>
+  
+      <Routes>
+            <Route path="/album" element={(
+                 <>
+                 <Album setNftAlbum={setNftAlbum}/>
+                 </>
+                )} 
+              />  
+     </Routes>
+  
 
     </>
   );

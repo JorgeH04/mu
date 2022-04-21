@@ -42,7 +42,11 @@ const useAudio = (url) => {
     }
   }, [url]); 
 
-  useEffect(() => {
+
+
+  
+
+   useEffect(() => {
     if (isPlaying) {
       audioRef.current.play();
       startTimer();

@@ -1,12 +1,12 @@
-import React from "react";
-import useAudio from "../hooks/useAudio";
+import React, { useState, useEffect, useRef } from "react";
 import {Slider} from "antd";
 import { useIPFS } from "../hooks/useIPFS";
+import useAudio from "../hooks/useAudio";
 
 import { SoundOutlined, StepBackwardOutlined, StepForwardOutlined, PlayCircleFilled, PauseCircleFilled} from "@ant-design/icons";
 
 
-const Player = ({ url }) => {
+const AudioPlayer = ({ url }) => {
   const {resolveLink} = useIPFS();
   const [
     playing,
@@ -22,6 +22,7 @@ const Player = ({ url }) => {
   ] = useAudio(url);
 
   
+  
   const minSec = (secs) => {
     const minutes = Math.floor(secs / 60);
     const returnMin = minutes < 10 ? `0${minutes}` : minutes;
@@ -33,48 +34,58 @@ const Player = ({ url }) => {
 
   return (
     <>
-    <div className="buttons" style={{width:"300px", justifyContent:"start"}}>
-        <img className="cover" src={resolveLink(JSON.parse(url[trackIndex].metadata).image)} alt="currentCover" />
-        <div>
-        <div className="songTitle">{JSON.parse(url[trackIndex].metadata).name}</div>
-        <div className="songAlbum">{url[trackIndex].name}</div>
+
+
+
+
+
+ 
+
+
+     <div class="music_area music_gallery">
+        <div class="container">
+                <div class="row">
+                        <div class="col-xl-12">
+                            <div class="section_title text-center mb-65">
+                                <h3>Latest Tracks</h3>
+                            </div>
+                        </div>
+                    </div>
+  
+      
+            <div class="row align-items-center justify-content-center mb-20">
+                <div class="col-xl-10">
+                    <div class="row align-items-center">
+                                <div class="col-xl-9 col-md-9">
+                                    <div class="music_field">
+                                            <div class="thumb">
+                                                    <img src="img/music_man/3.png" alt=""/>
+                                                </div>
+                                                <div class="audio_name">
+                                                    <div class="name">
+                                                        <h4></h4>
+                                                        <p>10 November, 2019</p>
+                                                    </div>
+                                                        <audio preload="auto" controls>
+                                                                <source src="https://gateway.moralisipfs.com/ipfs/QmNsnqDMmRMKgWm2dQrZ4uFGQNUiZ7vmbfgptYyAgfKNVx/media/0"/>
+                                                            </audio>
+                                                </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-md-3">
+                                    <div class="music_btn">
+                                            <a href="#" class="boxed-btn">buy albam</a>
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
-    <div>
-      <div className="buttons">
-        <StepBackwardOutlined className="forback" onClick={toPrevTrack} />
-        {playing ? 
-            <PauseCircleFilled className="pauseplay" onClick={toggle} /> :
-            <PlayCircleFilled className="pauseplay" onClick={toggle} />
-        }
-        <StepForwardOutlined className="forback" onClick={toNextTrack} />
-      </div>
-      <div className="buttons">
-      {minSec(trackProgress)}
-      <Slider
-        value={trackProgress}
-        step={1}
-        min={0}
-        max={duration ? duration : 0}
-        className="progress" 
-        tooltipVisible={false}
-        onChange={(value) => onSearch(value)}
-        onAfterChange={onSearchEnd}
-      />
-      {duration ? minSec(Math.round(duration)) : "00:00"}
-      </div>
-    </div>
-    <div className="soundDiv">
-          <SoundOutlined />
-          <Slider 
-            className="volume" 
-            defaultValue={100} 
-            tooltipVisible={false}
-            onChange={(value) => onVolume(value/100)}
-          />
-    </div>
+ 
     </>
   );
 };
 
-export default Player;
+export default AudioPlayer;

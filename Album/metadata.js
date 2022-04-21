@@ -1,20 +1,20 @@
 let fs = require("fs");
 let axios = require("axios");
 
-let songs = ["JTiger.mp3", "JTwinkle.mp3"];
-let durations = ["00:15", "00:05"];
+let songs = ["Ataque1.mp3", "Ataque2.mp3"];
+let durations = ["00:13", "00:20"];
 let ipfsArray = [];
 
 for (let i = 0; i < songs.length; i++) {
   ipfsArray.push({
     path: `metadata/${i}.json`,
     content: {
-      image: `ipfs://QmNsnqDMmRMKgWm2dQrZ4uFGQNUiZ7vmbfgptYyAgfKNVx/media/0`, //xxx = hash
+      image: `ipfs://QmQkk4F7HawRtsh63Ch2W6WotpDgmJCf19fguHst1mmfaw/media/2`, //xxx = hash
       name: songs[i],
-      animation_url: `ipfs://QmNsnqDMmRMKgWm2dQrZ4uFGQNUiZ7vmbfgptYyAgfKNVx/media/${i}`, //xxx = hash
+      animation_url: `ipfs://QmQkk4F7HawRtsh63Ch2W6WotpDgmJCf19fguHst1mmfaw/media/${i}`, //xxx = hash
       duration: durations[i],
-      artist: "jfd",
-      year: "1908"
+      artist: "Ataque77",
+      year: "2022"
     },
   });
 }
