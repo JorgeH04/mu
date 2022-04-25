@@ -20,6 +20,5 @@ export const library = [
         "https://ipfs.moralis.io:2053/ipfs/QmX5NMV8hh1g5EcebX1e2Y55uQnVnKPk8YzW37wpnRWfXp/media/6",
       contract: "0x8A68d4e28515815CD6026416f4B2a4B647796F3E",
     },
- 
-    
+   
   ];
