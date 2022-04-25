@@ -1,19 +1,19 @@
 let fs = require("fs");
 let axios = require("axios");
 
-let songs = ["Ataque1.mp3", "Ataque2.mp3"];
-let durations = ["00:13", "00:20"];
+let songs = ["punk1.mp3", "punk2.mp3"];
+let durations = ["00:30", "00:30"];
 let ipfsArray = [];
 
 for (let i = 0; i < songs.length; i++) {
   ipfsArray.push({
     path: `metadata/${i}.json`,
     content: {
-      image: `ipfs://QmQkk4F7HawRtsh63Ch2W6WotpDgmJCf19fguHst1mmfaw/media/2`, //xxx = hash
+      image: `ipfs://QmZC3q9Q5Gz3gS93H6okT9NZAj3z4cWYydpmri2ArZTKxf/media/2`, //xxx = hash
       name: songs[i],
-      animation_url: `ipfs://QmQkk4F7HawRtsh63Ch2W6WotpDgmJCf19fguHst1mmfaw/media/${i}`, //xxx = hash
+      animation_url: `ipfs://QmZC3q9Q5Gz3gS93H6okT9NZAj3z4cWYydpmri2ArZTKxf/media/${i}`, //xxx = hash
       duration: durations[i],
-      artist: "Ataque77",
+      artist: "Blood4blood",
       year: "2022"
     },
   });

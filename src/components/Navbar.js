@@ -31,15 +31,15 @@ export default class Navbar extends Component {
                                                   </Link>
                                                 </a>
                                             </li>
-                                            <li><a  >About</a></li>
-                                             <li><a >Tracks <i class="ti-angle-down"></i></a>
+                                             <li><a>About</a></li>
+                                             <li><a>Tracks <i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
-                                                    <li><a >blog</a></li>
-                                                    <li><a  >single-blog</a></li>
+                                                    <li><a>track 1</a></li>
+                                                    <li><a>track 2</a></li>
                                                 </ul>
                                             </li>
                                         
-                                            <li><a  >Contact</a></li>
+                                            <li><a>Contact</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -58,16 +58,11 @@ export default class Navbar extends Component {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </header>
- 
-
 </>
-
-
         )
     }
 }

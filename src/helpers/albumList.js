@@ -8,17 +8,24 @@ export const library = [
      songdos:"https://gateway.moralisipfs.com/ipfs/QmQkk4F7HawRtsh63Ch2W6WotpDgmJCf19fguHst1mmfaw/media/1",
 
     },
+ 
     {
-      title: "Hyperspace",
+      title: "DeathMetal",
       image:
-        "https://www.digitalartsonline.co.uk/cmsdata/slideshow/3776245/beck_-_hyperspace.jpg"
+        "https://gateway.moralisipfs.com/ipfs/QmZF59KCrXCwnkV2apkvcDfmZkSrRsoEaJG5XTN6w9ogup/media/2",
+      contract: "0x500A6c25718b0e1C2574A29eBFd2cd5Ed9C4e841",
+      song:"https://gateway.moralisipfs.com/ipfs/QmZF59KCrXCwnkV2apkvcDfmZkSrRsoEaJG5XTN6w9ogup/media/0",
+      songdos:"https://gateway.moralisipfs.com/ipfs/QmZF59KCrXCwnkV2apkvcDfmZkSrRsoEaJG5XTN6w9ogup/media/1",
     },
 
     {
-      title: "Shadow",
+      title: "Blood for Blood",
       image:
-        "https://ipfs.moralis.io:2053/ipfs/QmX5NMV8hh1g5EcebX1e2Y55uQnVnKPk8YzW37wpnRWfXp/media/6",
-      contract: "0x8A68d4e28515815CD6026416f4B2a4B647796F3E",
+        "https://gateway.moralisipfs.com/ipfs/QmZC3q9Q5Gz3gS93H6okT9NZAj3z4cWYydpmri2ArZTKxf/media/2",
+      contract: "0x56863819032F91B4c670e5d04d39A5b731dfc1FC",
+      song:"https://gateway.moralisipfs.com/ipfs/QmZC3q9Q5Gz3gS93H6okT9NZAj3z4cWYydpmri2ArZTKxf/media/0",
+      songdos:"https://gateway.moralisipfs.com/ipfs/QmZC3q9Q5Gz3gS93H6okT9NZAj3z4cWYydpmri2ArZTKxf/media/1",
     },
    
   ];
+  
