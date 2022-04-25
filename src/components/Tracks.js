@@ -35,27 +35,7 @@ export default class Tracks extends Component {
                           
             ))}
 
-
-
-                <div class="col-xl-3 col-lg-3 col-md-6">
-                    <div class="single_video">
-                        <div class="thumb">
-                            <img src="img/video/4.png" alt=""/>
-                        </div>
-                        <div class="hover_elements">
-                            <div class="video">
-                                    <a class="popup-video" href="https://www.youtube.com/watch?v=Hzmp3z6deF8" > 
-                                            <i class="fa fa-play"></i>
-                                        </a>
-                            </div>
-
-                            <div class="hover_inner">
-                                <span>New York Show-2018</span>
-                                <h3><a href="#">Shadows of My Dream</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+ 
             </div>
         </div>
     </div>
