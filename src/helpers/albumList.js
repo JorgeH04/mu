@@ -1,8 +1,11 @@
 export const library = [
    {
      title: "Ataque77",
+     songname:"Cloudfire",
+     songdosname:"Atardecer",
      image:
       "https://gateway.moralisipfs.com/ipfs/QmQkk4F7HawRtsh63Ch2W6WotpDgmJCf19fguHst1mmfaw/media/2",
+
      contract: "0xeDF2A7447B920a90f1A4D0B51bFE4c0CA17Bd93e",
      song:"https://gateway.moralisipfs.com/ipfs/QmQkk4F7HawRtsh63Ch2W6WotpDgmJCf19fguHst1mmfaw/media/0",
      songdos:"https://gateway.moralisipfs.com/ipfs/QmQkk4F7HawRtsh63Ch2W6WotpDgmJCf19fguHst1mmfaw/media/1",
