@@ -12,6 +12,7 @@ export default class Hero extends Component {
                     <div class="col-xl-12">
                         <div class="slider_text text-center ">
                             <h3>Music Nft Platform</h3>
+                            <p>#2 JORGE HESS portfolio </p>
                         </div>
                     </div>
                 </div>
